@@ -17,7 +17,7 @@ public enum Browser {
         @Override
         public WebDriver initialize(DesiredCapabilities capabilities) {
             synchronized (BrowserManager.class) {
-                FirefoxDriverManager.getInstance().arch32().setup();
+                FirefoxDriverManager.getInstance().setup();
                 return new FirefoxDriver(capabilities);
             }
         }

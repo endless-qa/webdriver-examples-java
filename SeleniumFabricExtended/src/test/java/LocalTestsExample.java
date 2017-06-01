@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
 import pages.AmazonMainPage;
 import pages.TodaysDealsPage;
-import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
 
 public class LocalTestsExample {
@@ -13,7 +12,7 @@ public class LocalTestsExample {
 
     @BeforeClass
     @Parameters("browser")
-    public void setUpClass(Browser browser) throws MalformedURLException {
+    public void setUpClass(Browser browser) {
         driver = BrowserProvider.createDriver(browser);
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.manage().window().maximize();
