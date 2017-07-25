@@ -28,7 +28,7 @@ public class MyTests {
     public void testSearchingItems(String searchString) {
         new AmazonMainPage().searchFor(searchString)
                             .withResultsMoreThan(1)
-                            .firstItemTitleContains("API testing");
+                            .firstItemTitleContains("unit testing");
     }
 
 	@Feature("Discounts")
