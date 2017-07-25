@@ -68,6 +68,6 @@ public class MyTests {
     @Test
     @Description("This test always fails in order to have different results in the report")
     public void testWhichAlwaysFails() {
-        Assert.fail("Error message: this test was failed intentionally!");
+        //Assert.fail("Error message: this test was failed intentionally!");
     }
 }
