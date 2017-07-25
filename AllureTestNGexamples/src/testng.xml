@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Allure Report Demo">
+    <test name="Amazon Tests">
+        <parameter name="searchString" value="unit testing" />
+        <parameter name="label" value="DEAL OF THE DAY" />
+            <classes>
+                <class name="MyTests"/>
+            </classes>
+    </test>
+</suite>
