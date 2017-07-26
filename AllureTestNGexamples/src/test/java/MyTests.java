@@ -39,7 +39,7 @@ public class MyTests {
     public void testTodaysDealsAvailability(String label) {
         new AmazonMainPage().enterTodaysDeal()
                             .withResultsMoreThan(1)
-                            .firstItemHasLabel("Discounts");
+                            .firstItemHasLabel(label);
     }
 
     @Feature("Purchasing")
@@ -59,7 +59,7 @@ public class MyTests {
                             .addToCart()
                             .proceedToCheckout();
 
-        Assert.assertEquals("Super Colossal", cart.getLastAddedItemTitle());
+        Assert.assertEquals(expectedTitle, cart.getLastAddedItemTitle());
     }
 
     @Owner("John Doe")
