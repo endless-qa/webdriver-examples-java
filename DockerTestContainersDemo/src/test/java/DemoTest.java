@@ -4,7 +4,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testcontainers.containers.BrowserWebDriverContainer;
 
-public class Demo {
+public class DemoTest {
 
     @Rule
     public BrowserWebDriverContainer chrome = new BrowserWebDriverContainer().
